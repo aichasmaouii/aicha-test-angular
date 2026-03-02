@@ -1,0 +1,17 @@
+<div *ngFor="let res of listresidencedb" class="card mb-3 p-3">
+
+  <h5>{{ res.name }}</h5>
+  <p>{{ res.address }}</p>
+  <p>Status: {{ res.status }}</p>
+
+  <button class="btn btn-primary me-2"
+          (click)="goToDetails(res.id)">
+    Details
+  </button>
+
+  <button class="btn btn-danger"
+          (click)="delres(res.id)">
+    Delete
+  </button>
+
+</div>

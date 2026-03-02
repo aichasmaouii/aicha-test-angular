@@ -1,0 +1,15 @@
+<h2 class="mb-3">{{ residence.name }}</h2>
+
+    <img
+      [src]="residence.image"
+      alt="Residence Image"
+      class="img-fluid mb-3"
+      style="max-height: 400px; object-fit: cover;"
+    >
+
+    <p><strong>Address:</strong> {{ residence.address }}</p>
+    <p><strong>Status:</strong> {{ residence.status }}</p>
+    <p><strong>Created At:</strong> {{ residence.created_at | date:'medium' }}</p>
+    <p><strong>Updated At:</strong> {{ residence.updated_at | date:'medium' }}</p>
+
+
